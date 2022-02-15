@@ -6,7 +6,13 @@ Functional Programming :
 	
 filter -  filter the stream of values which will accept the Predicate interface.
 
-Predicate - Functional interface with one methos which returns true or false
+		Predicate - Functional interface with one methos which returns true or false
+		
+map   - Convert each element in the stream to something. for ex : squaring , counting no of characters. This will accept Fuction interface.
+
+		Function - This interface takes inputs and returns values.
+
+		
 
 			
 

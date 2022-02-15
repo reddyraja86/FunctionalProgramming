@@ -25,7 +25,7 @@ public class FP01Functional {
 				+ "\r\n"
 				+ "List<String> courses = List.of(\"Spring\", \"Spring Boot\", \"API\" , \"Microservices\", \"AWS\", \"PCF\",\"Azure\", \"Docker\", \"Kubernetes\")");
 		
-		courses.stream().forEach(System.out::print);
+		courses.stream().forEach(System.out::println);
 		
 		System.out.println("  --- Exercise 3 ---");
 		System.out.println("Print Courses Containing the word \"Spring\"");
@@ -40,11 +40,13 @@ public class FP01Functional {
 		System.out.println("Exercise 5\r\n"
 				+ "Print the cubes of odd numbers");
 		
-		numbers.stream().filter((num) -> (num%2!=0)).forEach( (i)-> System.out.println(i*i*i));
+		numbers.stream().filter((num) -> (num%2!=0))
+					.map(num -> num*num*num)
+					.forEach(System.out::println);
 
 		System.out.println("Exercise 6\r\n"
 				+ "Print the number of characters in each course name");
-		
+		courses.stream().map((course) -> (course.length())).forEach(System.out::println);
 		
 	}
 
