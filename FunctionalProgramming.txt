@@ -6,5 +6,7 @@ Functional Programming :
 	
 filter -  filter the stream of values which will accept the Predicate interface.
 
+Predicate - Functional interface with one methos which returns true or false
 
+			
 
