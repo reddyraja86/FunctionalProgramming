@@ -1,4 +1,7 @@
 Functional Programming :
 ========================
 
+:: operator  -- Used to call the static methods using class name
+	Ex : ClassName::MehotdName
+
 
