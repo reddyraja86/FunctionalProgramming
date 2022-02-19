@@ -11,6 +11,30 @@ filter -  filter the stream of values which will accept the Predicate interface.
 map   - Convert each element in the stream to something. for ex : squaring , counting no of characters. This will accept Fuction interface.
 
 		Function - This interface takes inputs and returns values.
+		
+		
+		
+		
+		
+
+Complete Application using microservices and Angular :
+
+
+1. Authentication code
+2. Exception handling code
+3. Validations
+4. Request validations
+5. Service and Repository layers
+6. Caching
+7. Configuring the logging ( Slueth,zipkin)
+8. Setup different environment ( dev QA)
+9. Actuator,Promothues , Graphana 
+10.Integration Tests
+11. Docker images and k8s configuration
+12. CI CD pipeline to deploy
+
+
+	
 
 		
 
