@@ -1,19 +1,30 @@
 Functional Programming :
 ========================
 
+Why we need functional Programming :
+ 
+   It is a declarative style of programming rather than imperative .Declarative way of implementation  which will reduce the code base and number of lines.
+   
+   
+
+Functional Interface : Interface with only one abstract method.
+	Predicate,Function,Consumer
+	Ex : check the exmaple FP02FunctionalInterface.java
+
 :: operator  -- Used to call the static methods using class name
 	Ex : ClassName::MethodName
 	
 filter -  filter the stream of values which will accept the Predicate interface.
 
-		Predicate - Functional interface with one methos which returns true or false
+		Predicate - Functional interface with one method which returns true or false
 		
 map   - Convert each element in the stream to something. for ex : squaring , counting no of characters. This will accept Fuction interface.
 
 		Function - This interface takes inputs and returns values.
 		
 		
-		
+
+	
 		
 		
 
@@ -34,6 +45,9 @@ Complete Application using microservices and Angular :
 12. CI CD pipeline to deploy
 
 
+
+
+	
 	
 
 		

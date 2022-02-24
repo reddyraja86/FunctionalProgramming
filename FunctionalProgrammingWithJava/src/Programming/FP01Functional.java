@@ -2,6 +2,7 @@ package Programming;
 
 import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class FP01Functional {
@@ -53,8 +54,53 @@ public class FP01Functional {
 		System.out.println("Exercise 7\r\n"
 				+ "Square every number in a list and find the sum of squares");
 		
-		Integer val = numbers.stream().map(num -> (num*num)).collect(Collectors.summingInt(Integer::intValue));
-		System.out.println(val);
+		int sum =numbers.stream().map(n->n*n).reduce(0,Integer::sum);
+		
+		System.out.println(sum);
+		
+		System.out.println("Exercise 8\r\n"
+				+ "Cube every number in a list and find the sum of cubes");
+		
+		int C_sum = numbers.stream().map(n->n*n*n).reduce(0, Integer::sum);
+		
+		System.out.println(C_sum);
+		
+		System.out.println("Exercise 9\r\n"
+				+ "Find Sum of Odd Numbers in a list");
+		
+		
+		int o_sum = numbers.stream().filter(n->n%2!=0).reduce(0, Integer::sum);
+		System.out.println(o_sum);
+		
+		System.out.println("Exercise 10\r\n"
+				+ "Create a List with Even Numbers Filtered from the Numbers List");
+		
+		numbers.stream().filter(n->n%2==0).forEach(System.out::println);
+		
+		System.out.println("Exercise 11\r\n"
+				+ "Create a List with lengths of all course titles.");
+		
+		List<Integer> coursesLength =courses.stream().map(n->n.length()).collect(Collectors.toList());
+		
+		coursesLength.stream().forEach(System.out::println);
+		
+		
+		System.out.println("Exercise 12\r\n"
+				+ "Find Functional Interface behind the second argument of reduce method. Create an implementation for the Functional Interface.\r\n"
+				+ "\r\n"
+				+ "int sum = numbers.stream() .reduce(0, Integer::sum);");
+		
+		BinaryOperator<Integer> binaryOperator = new BinaryOperator<Integer>() {
+
+			@Override
+			public Integer apply(Integer t, Integer u) {
+				return t+u;
+			}
+			
+		};
+		int s1= numbers.stream().reduce(0,binaryOperator);
+		int s2 = numbers.stream() .reduce(0, Integer::sum);
+		System.out.println(s1 + " " + s2);
 		
 	}
 
