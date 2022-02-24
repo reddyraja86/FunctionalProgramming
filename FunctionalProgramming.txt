@@ -46,7 +46,34 @@ Complete Application using microservices and Angular :
 
 
 
+PM Tools :
 
+	Capture Skill gap
+	Capture 1x1 Tracking
+	Capture Team Meetings
+
+  Admin Login :
+    
+    Project-1       |   
+	Project-2       |
+	Project-3       |
+	Project-4       |
+	Project-5       |
+	
+	
+	
+   PM Login :
+    
+     CMS						SVF
+		Team Members				Team Members
+   
+	
+    CMS 				
+						Name
+		Technology
+		 java
+		 UI
+  	
 	
 	
 
